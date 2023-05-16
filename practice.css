@@ -1,0 +1,368 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+/* TOPBAR */
+#topbar {
+  height: 55px;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  position: absolute;
+}
+
+#topbar button {
+  color: #fff;
+  background: #f6b024;
+  padding: 8px 24px 8px 24px;
+  border-radius: 50px;
+}
+
+/* HEADER */
+header {
+  background: rgba(0, 0, 0, 0.5);
+  height: 80px;
+  width: 100%;
+  top: 55px;
+  position: absolute;
+}
+
+.logo {
+  letter-spacing: 7px;
+  text-transform: uppercase;
+}
+header .logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 35px;
+}
+
+/*NAVBAR */
+
+.navbar a {
+  font-size: 14px;
+  color: #fff;
+  position: relative;
+}
+.navbar-collapse {
+  justify-content: right;
+}
+
+.navbar-nav a:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: -2px;
+  background-color: #f6b024;
+  visibility: hidden;
+}
+
+.navbar-nav a:hover:before {
+  visibility: visible;
+  width: 60%;
+}
+@media only screen and (max-width: 991px) {
+  .navbar-collapse {
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: 14px;
+    z-index: 999;
+  }
+  .logo {
+    margin-top: 3px;
+  }
+}
+
+.Wrapper {
+  position: relative;
+}
+
+/* HERO SECTION */
+#hero {
+  width: 100%;
+  padding: 250px 0px;
+  background: linear-gradient(rgba(5, 74, 133, 0.8), rgba(5, 74, 133, 0.8)),
+    url("img/hero-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#hero .carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#hero h2 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#hero p {
+  width: 80%;
+  color: #fff;
+}
+
+#hero .carousel-control-prev,
+#hero .carousel-control-next {
+  width: 10%;
+}
+
+#hero .btn-get-started {
+  font-size: 14px;
+  letter-spacing: 2px;
+  padding: 10px 40px;
+  border-radius: 50px;
+  margin: 10px;
+  color: #fff;
+  border: 2px solid #f6b024;
+  text-decoration: none;
+}
+
+#hero .btn-get-started:hover {
+  background: #f6b024;
+  text-decoration: none;
+}
+/* BOXES */
+.icon-boxes {
+  top: 600px;
+  position: absolute;
+  width: 100%;
+}
+.icon-boxes .icon-box {
+  padding: 40px 30px;
+  background: #fff;
+  box-shadow: 3px 3px 3px 3px rgba(68, 88, 144, 0.2);
+  border-radius: 10px;
+}
+
+.icon-boxes .title {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.icon-boxes .title a {
+  color: #065ba4;
+  text-decoration: none;
+}
+
+.icon-boxes .description {
+  font-size: 15px;
+  line-height: 28px;
+}
+/* ABOUT US */
+.about {
+  padding: 120px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("img/about-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 250px;
+}
+.about p {
+  font-weight: 500;
+}
+.about .content ul {
+  list-style: none;
+}
+
+.about .content ul li {
+  padding-left: 28px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/* CLIENTS */
+.clientBox {
+  padding-right: 0px;
+  padding: 0px 1.5%;
+}
+.clients .clientBox img {
+  opacity: 0.5;
+}
+
+.clients .clientBox:hover img {
+  opacity: 1;
+}
+
+/* WHY US */
+.fifthPage {
+  background: #f1f8fff0;
+}
+.whyUs {
+  background-image: url(img/why-us.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* SERVICES */
+.services .icon-box {
+  margin-bottom: 20px;
+  padding: 50px 40px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+.services .icon-box h4 {
+  margin-left: 70px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.services .icon-box h4 a {
+  color: #05579e;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.services .icon-box h4 a:hover {
+  color: #0880e8;
+}
+
+.services .icon-box p {
+  margin-left: 70px;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+/* CALL TO ACTION */
+.cta {
+  background: linear-gradient(rgba(5, 74, 133, 0.6), rgba(5, 74, 133, 0.6)),
+    url("img/cta-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0;
+}
+
+.cta .cta-btn:hover {
+  background: #f6b024;
+}
+.cta button {
+  border-radius: 25px;
+  padding: 5px 25px;
+}
+/* TEAM SECTION */
+.ninthPage {
+  background: #f1f8fff0;
+}
+.teamImg {
+  border-radius: 50%;
+}
+/* PRICING SECTION */
+.pricing .box {
+  padding: 20px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.pricing h3 {
+  font-weight: 400;
+  margin: -20px -20px 20px -20px;
+  padding: 20px 15px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #065fae;
+  background: #f8f8f8f1;
+}
+.pricing h4 {
+  font-size: 36px;
+  color: #0880e8;
+  margin-bottom: 20px;
+}
+.pricing h4 sup {
+  font-size: 20px;
+  top: -15px;
+  left: -3px;
+}
+.pricing h4 span {
+  color: #bababa;
+  font-size: 16px;
+  font-weight: 300;
+}
+.pricing ul {
+  list-style: none;
+  text-align: center;
+}
+.pricing ul li {
+  padding-bottom: 16px;
+}
+.pricing ul .na {
+  color: #bababa;
+  text-decoration: line-through;
+}
+.pricing .box .btn {
+  border-radius: 50px;
+  padding: 10px 30px 10px 30px;
+}
+.eleventhPage {
+  background: #dbe9f7f0;
+}
+.eleventhPage .accordion button {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.eleventhPage .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* CONTACT PAGE */
+.twelvethPage {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("img/contact-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/* FOOTER */
+#footer {
+  background: #05579e;
+  padding-bottom: 40px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer-newsletter {
+  padding: 50px 0;
+  background: #034884;
+}
+.newsletterEmail {
+  width: 80%;
+  padding: 6px 5px;
+  border-radius: 50px;
+  border: none;
+}
+.newsletterButton {
+  border-radius: 50px;
+}
+
+.footer-top h4 {
+  font-size: 17px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-links ul li {
+  line-height: 2;
+}
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
